@@ -1,0 +1,19 @@
+{
+  "name": "innovation-animation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weareopenr/innovation-animation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weareopenr/innovation-animation/issues"
+  },
+  "homepage": "https://github.com/weareopenr/innovation-animation#readme"
+}
