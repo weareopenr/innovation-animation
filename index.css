@@ -1,13 +1,37 @@
 .food {
+  transform-origin: 30% 40%;
+  animation: loading 4s infinite;
 }
 
 .pan {
   transform-origin: 20% 60% 0;
-  animation: shake 2s infinite;
+  animation: shake 4s infinite;
 }
 
 .shadow {
-  animation: pulse 2s infinite ease-in-out;
+  animation: pulse 4s infinite ease-in-out;
+}
+
+@keyframes loading {
+  0%,
+  30% {
+    visibility: hidden;
+    transform: rotate(-180deg);
+  }
+  35% {
+    visibility: visible;
+  }
+  39%,
+  41% {
+    transform: scaleX(0.9) rotate(0deg);
+  }
+  60% {
+    transform: rotate(180deg);
+  }
+  61%,
+  100% {
+    visibility: hidden;
+  }
 }
 
 @keyframes shake {
