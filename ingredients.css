@@ -1,0 +1,95 @@
+.whisk{
+    animation: stir 2s infinite;
+}
+
+.star{
+    animation: rising 2s infinite;
+}
+
+.circle{
+    animation: risingA 4s infinite;
+}
+
+.mixture{
+    animation: reveal 2s infinite;
+}
+
+.jug{
+    transform: rotate(45deg);
+    transform-origin: 50% 55% 0;
+    animation: lifting 2s infinite;
+}
+
+.jug-mask{
+    transform: rotate(45deg);
+    animation: hide-mask 2s infinite;
+}
+
+.liquid {
+    opacity: 0;
+    animation: pouring 2s infinite;
+}
+
+.resting-liquid{
+    animation: liquid 2s infinite;
+}
+
+@keyframes stir {
+    50%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rising {
+    100%{
+        transform: scale(0);
+        transform-origin: top;
+    }
+}
+
+@keyframes risingA {
+    100%{
+        transform: scale(0);
+        transform-origin: center;
+    }
+}
+
+@keyframes reveal {
+    80% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(50px);
+    }
+}
+
+@keyframes lifting {
+    100%{
+        transform: translateZ(50px);
+    }
+}
+
+@keyframes pouring {
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes liquid {
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes hide-mask {
+    0%{
+        opacity: 0;    
+    }
+    100%{
+        transform: rotate(45deg);
+        opacity: 1;
+    }
+}
