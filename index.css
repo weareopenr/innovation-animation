@@ -30,15 +30,13 @@
 
 @keyframes pulse {
   0% {
-    transform: scale(0.5);
-    transform-origin: center;
+    transform: scaleX(1);
   }
   50% {
-    transform: scale(1);
-    transform-origin: center;
+    transform: scaleX(0.6);
+    transform-origin: center center 0;
   }
   100% {
-    transform: scale(0.5);
-    transform-origin: center;
+    transform: scaleX(1);
   }
 }
