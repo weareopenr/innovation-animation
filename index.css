@@ -66,3 +66,46 @@
     transform-origin: 50% 0 0;
   }
 }
+
+.front-fork {
+  animation: bouncing-fork 2s infinite ease-in;
+}
+
+.rear-fork {
+  animation: bouncing-fork 2s infinite ease-in;
+}
+
+@keyframes bouncing-fork {
+  0% {
+    transform: translateY(2px);
+  }
+  20% {
+    transform: translateY(4px);
+  }
+  40% {
+    transform: translateY(2px);
+  }
+  60% {
+    transform: translateY(4px);
+  }
+  80% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(4px);
+  }
+}
+
+.background,
+.mask-group {
+  animation: movement 2s alternate infinite ease;
+}
+
+@keyframes movement {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(10px);
+  }
+}
