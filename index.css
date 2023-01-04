@@ -67,11 +67,11 @@
   }
 }
 
-.front-fork {
+#front-fork {
   animation: bouncing-fork 2s infinite ease-in;
 }
 
-.rear-fork {
+#rear-fork {
   animation: bouncing-fork 2s infinite ease-in;
 }
 
@@ -107,5 +107,39 @@
   }
   to {
     transform: translateX(10px);
+  }
+}
+
+.rider-plus-bike {
+  animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(100px);
+  }
+  70% {
+    transform: translateY(0%);
+  }
+  80% {
+    transform: translateY(-3%);
+  }
+  90% {
+    transform: translateY(0%);
+  }
+  95% {
+    transform: translateY(-3%);
+  }
+  97% {
+    transform: translateY(0%);
+  }
+  99% {
+    transform: translateY(-3%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
