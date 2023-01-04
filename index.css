@@ -67,15 +67,11 @@
   }
 }
 
-#front-fork {
-  animation: bouncing-fork 2s infinite ease-in;
+.bounce {
+  animation: bounce 2s infinite ease-in;
 }
 
-#rear-fork {
-  animation: bouncing-fork 2s infinite ease-in;
-}
-
-@keyframes bouncing-fork {
+@keyframes bounce {
   0% {
     transform: translateY(2px);
   }
@@ -96,30 +92,28 @@
   }
 }
 
-.background,
-.mask-group {
-  animation: movement 2s alternate infinite ease;
-}
-
 @keyframes movement {
-  from {
-    transform: translateX(0);
+  0% {
+    transform: translateX(-20px);
   }
-  to {
-    transform: translateX(10px);
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(-20px);
   }
 }
 
 .rider-plus-bike {
-  animation: bounce 2s ease infinite;
+  animation: movement 4s infinite ease-in-out;
 }
 
-@keyframes bounce {
+/* @keyframes bounce {
   0% {
     transform: translateX(0px);
   }
   50% {
-    transform: translateX(100px);
+    transform: translateX(2px);
   }
   70% {
     transform: translateY(0%);
@@ -142,4 +136,4 @@
   100% {
     transform: translateY(0);
   }
-}
+} */
