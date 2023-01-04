@@ -9,7 +9,7 @@
 }
 
 .shadow {
-  animation: pulse 4s infinite ease-in-out;
+  animation: pulse 4s infinite;
 }
 
 @keyframes loading {
@@ -61,7 +61,7 @@
     transform: scaleX(0.7);
     transform-origin: 25% 0 0;
   }
-  100% {
+  90% {
     transform: scaleX(1);
     transform-origin: 50% 0 0;
   }
