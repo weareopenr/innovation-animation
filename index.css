@@ -68,27 +68,24 @@
 }
 
 .bounce {
-  animation: bounce 2s infinite ease-in;
+  animation: bounce 2s infinite ease-in-out 1s;
 }
 
 @keyframes bounce {
   0% {
+    transform: translateY(0px);
+  }
+  25% {
     transform: translateY(2px);
   }
-  20% {
-    transform: translateY(4px);
+  50% {
+    transform: translateY(0px);
   }
-  40% {
-    transform: translateY(2px);
-  }
-  60% {
-    transform: translateY(4px);
-  }
-  80% {
+  75% {
     transform: translateY(2px);
   }
   100% {
-    transform: translateY(4px);
+    transform: translateY(0px);
   }
 }
 
@@ -113,7 +110,7 @@
     transform: translateX(0px);
   }
   50% {
-    transform: translateX(2px);
+    transform: translateX(0px);
   }
   70% {
     transform: translateY(0%);
@@ -137,3 +134,39 @@
     transform: translateY(0);
   }
 } */
+
+.transport-animation {
+  position: absolute;
+}
+
+.skyline-container {
+  background-color: #CAD9D9;
+  width: 410px;
+  height: 410px;
+  border-radius: 50%;
+  overflow:clip;
+  position: relative;
+  top: -500px;
+  left: 65px;
+  z-index: -999;
+}
+
+.scrolling-skyline {
+  background: url("skyline.svg") repeat-x;
+  overflow: hidden;
+  position: relative;
+  animation: slideshow 3s linear infinite;
+  width: calc(838px * 2);
+  height: 100%;
+}
+.rider-svg {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+@keyframes slideshow {
+  0%    { left: 0; }
+  100%  { left: -200%; }
+}
+
