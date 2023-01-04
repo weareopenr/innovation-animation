@@ -1,59 +1,75 @@
 .whisk{
-    animation: stir 2s infinite;
+    animation: stir 1s infinite;
 }
 
 .star{
-    animation: rising 2s infinite;
+    animation: risingStar 3s infinite;
+    animation-delay: 3s;
+}
+
+.star1{
+    animation: risingStar 4s infinite;
+    animation-delay: 3s;
+}
+
+.star2{
+    animation: risingStar 6s infinite;
+    animation-delay: 3s;
+}
+
+.star3{
+    animation: risingStar 8s infinite;
+    animation-delay: 3s;
 }
 
 .circle{
-    animation: risingA 4s infinite;
+    animation: risingCircle 3s infinite;
+    animation-delay: 3s;
+}
+
+.circle1{
+    animation: risingCircle 4s infinite;
+    animation-delay: 3s;
+}
+
+.circle2{
+    animation: risingCircle 7s infinite;
+    animation-delay: 3s;
 }
 
 .mixture{
-    animation: reveal 2s infinite;
+    animation: reveal 4s infinite;
 }
 
 .jug{
     transform: rotate(45deg);
     transform-origin: 50% 55% 0;
-    animation: lifting 2s infinite;
-}
-
-.jug-mask{
-    transform: rotate(45deg);
-    animation: hide-mask 2s infinite;
-}
-
-.liquid {
-    opacity: 0;
-    animation: pouring 2s infinite;
-}
-
-.resting-liquid{
-    animation: liquid 2s infinite;
+    animation: lifting 4s infinite;
 }
 
 @keyframes stir {
     50%{
-        transform: rotate(-10deg);
+        transform: rotate(10deg);
     }
     100%{
         transform: rotate(0deg);
     }
 }
 
-@keyframes rising {
+@keyframes risingStar {
     100%{
         transform: scale(0);
-        transform-origin: top;
+        transform-origin: 50px 0px;
     }
 }
 
-@keyframes risingA {
+@keyframes risingCircle {
+    20%{
+        transform-origin: left;
+    }
     100%{
         transform: scale(0);
-        transform-origin: center;
+        transform-origin: 100px 0px;
     }
 }
 
@@ -69,27 +85,5 @@
 @keyframes lifting {
     100%{
         transform: translateZ(50px);
-    }
-}
-
-@keyframes pouring {
-    100%{
-        opacity: 1;
-    }
-}
-
-@keyframes liquid {
-    100%{
-        opacity: 0;
-    }
-}
-
-@keyframes hide-mask {
-    0%{
-        opacity: 0;    
-    }
-    100%{
-        transform: rotate(45deg);
-        opacity: 1;
     }
 }
