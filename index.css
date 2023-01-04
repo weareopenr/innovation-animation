@@ -105,46 +105,16 @@
   animation: movement 4s infinite ease-in-out;
 }
 
-/* @keyframes bounce {
-  0% {
-    transform: translateX(0px);
-  }
-  50% {
-    transform: translateX(0px);
-  }
-  70% {
-    transform: translateY(0%);
-  }
-  80% {
-    transform: translateY(-3%);
-  }
-  90% {
-    transform: translateY(0%);
-  }
-  95% {
-    transform: translateY(-3%);
-  }
-  97% {
-    transform: translateY(0%);
-  }
-  99% {
-    transform: translateY(-3%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-} */
-
 .transport-animation {
   position: absolute;
 }
 
 .skyline-container {
-  background-color: #CAD9D9;
+  background-color: #cad9d9;
   width: 410px;
   height: 410px;
   border-radius: 50%;
-  overflow:clip;
+  overflow: clip;
   position: relative;
   top: -500px;
   left: 65px;
@@ -152,13 +122,14 @@
 }
 
 .scrolling-skyline {
-  background: url("skyline.svg") repeat-x;
+  background: url('skyline.svg') repeat-x;
   overflow: hidden;
   position: relative;
-  animation: slideshow 3s linear infinite;
+  animation: slideshow 4s linear infinite;
   width: calc(838px * 2);
   height: 100%;
 }
+
 .rider-svg {
   position: relative;
   top: 0;
@@ -166,7 +137,10 @@
 }
 
 @keyframes slideshow {
-  0%    { left: 0; }
-  100%  { left: -200%; }
+  from {
+    left: 0;
+  }
+  to {
+    left: -200%;
+  }
 }
-
