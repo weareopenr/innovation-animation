@@ -66,3 +66,77 @@
     transform-origin: 50% 0 0;
   }
 }
+
+.bounce {
+  animation: bounce 2s infinite ease-in-out 1s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(2px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes movement {
+  0% {
+    transform: translateX(-20px);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(-20px);
+  }
+}
+
+.rider-plus-bike {
+  animation: movement 4s infinite ease-in-out;
+}
+
+.skyline-container {
+  background-color: #cad9d9;
+  width: 410px;
+  height: 410px;
+  border-radius: 50%;
+  overflow: clip;
+  position: relative;
+  top: -500px;
+  left: 65px;
+  z-index: -999;
+}
+
+.scrolling-skyline {
+  background: url('skyline.svg') repeat-x;
+  overflow: hidden;
+  position: relative;
+  animation: slideshow 4s linear infinite;
+  width: calc(838px * 2);
+  height: 100%;
+}
+
+.rider-svg {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+@keyframes slideshow {
+  from {
+    left: 0;
+  }
+  to {
+    left: -200%;
+  }
+}
