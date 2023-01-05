@@ -92,7 +92,8 @@ body {
 }
 
 @keyframes lifting {
-  50% {
+  50%,
+  58% {
     transform: translateZ(50px);
   }
 }
