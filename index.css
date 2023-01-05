@@ -1,7 +1,9 @@
 body {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  overflow: none;
 }
+
 h1 {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -9,42 +11,13 @@ h1 {
 button {
   margin: 20px 0px;
 }
-.bounce {
-  animation: bounce 2s infinite ease-in-out 1s;
+
+.mix {
+  height: 200px;
 }
 
-@keyframes bounce {
-  0% {
-    transform: translateY(0px);
-  }
-  25% {
-    transform: translateY(2px);
-  }
-  50% {
-    transform: translateY(0px);
-  }
-  75% {
-    transform: translateY(2px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-@keyframes movement {
-  0% {
-    transform: translateX(-20px);
-  }
-  50% {
-    transform: translateX(20px);
-  }
-  100% {
-    transform: translateX(-20px);
-  }
-}
-
-.rider-plus-bike {
-  animation: movement 4s infinite ease-in-out;
+.transport-animation {
+  height: 550px;
 }
 
 .skyline-container {
@@ -60,50 +33,10 @@ button {
 }
 
 .scrolling-skyline {
-  background: url('assets/skyline.svg') repeat-x;
+  background: url("assets/skyline.svg") repeat-x;
   overflow: hidden;
   position: relative;
   animation: slideshow 4s linear infinite;
   width: calc(838px * 2);
   height: 100%;
-}
-
-.rider-svg {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-@keyframes slideshow {
-  from {
-    left: 0;
-  }
-  to {
-    left: -200%;
-  }
-}
-
-body {
-  width: 100vw;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-a {
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
-
-  text-decoration: none;
-  color: initial;
-}
-
-.mix{
-  height: 200px;
-}
-
-.transport-animation{
-  height: 650px;
 }

@@ -1,89 +1,98 @@
-.whisk{
-    animation: stir 1s infinite;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.star{
-    animation: risingStar 3s infinite;
-    animation-delay: 3s;
+.whisk {
+  animation: stir 1s infinite;
 }
 
-.star1{
-    animation: risingStar 4s infinite;
-    animation-delay: 3s;
+.star {
+  animation: risingStar 3s infinite;
+  animation-delay: 3s;
 }
 
-.star2{
-    animation: risingStar 6s infinite;
-    animation-delay: 3s;
+.star1 {
+  animation: risingStar 4s infinite;
+  animation-delay: 3s;
 }
 
-.star3{
-    animation: risingStar 8s infinite;
-    animation-delay: 3s;
+.star2 {
+  animation: risingStar 6s infinite;
+  animation-delay: 3s;
 }
 
-.circle{
-    animation: risingCircle 3s infinite;
-    animation-delay: 3s;
+.star3 {
+  animation: risingStar 8s infinite;
+  animation-delay: 3s;
 }
 
-.circle1{
-    animation: risingCircle 4s infinite;
-    animation-delay: 3s;
+.circle {
+  animation: risingCircle 3s infinite;
+  animation-delay: 3s;
 }
 
-.circle2{
-    animation: risingCircle 7s infinite;
-    animation-delay: 3s;
+.circle1 {
+  animation: risingCircle 4s infinite;
+  animation-delay: 3s;
 }
 
-.mixture{
-    animation: reveal 4s infinite;
+.circle2 {
+  animation: risingCircle 7s infinite;
+  animation-delay: 3s;
 }
 
-.jug{
-    transform: rotate(45deg);
-    transform-origin: 50% 55% 0;
-    animation: lifting 4s infinite;
+.mixture {
+  animation: reveal 8s infinite;
+}
+
+.jug {
+  transform: rotate(45deg);
+  transform-origin: 50% 55% 0;
+  animation: lifting 8s infinite;
 }
 
 @keyframes stir {
-    50%{
-        transform: rotate(10deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 @keyframes risingStar {
-    100%{
-        transform: scale(0);
-        transform-origin: 50px 0px;
-    }
+  100% {
+    transform: scale(0);
+    transform-origin: 50px 0px;
+  }
 }
 
 @keyframes risingCircle {
-    20%{
-        transform-origin: left;
-    }
-    100%{
-        transform: scale(0);
-        transform-origin: 100px 0px;
-    }
+  20% {
+    transform-origin: left;
+  }
+  100% {
+    transform: scale(0);
+    transform-origin: 100px 0px;
+  }
 }
 
 @keyframes reveal {
-    80% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(50px);
-    }
+  35% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(50px);
+  }
+  40.1% {
+    transform: translateY(-50px);
+  }
 }
 
 @keyframes lifting {
-    100%{
-        transform: translateZ(50px);
-    }
+  50% {
+    transform: translateZ(50px);
+  }
 }
