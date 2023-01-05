@@ -86,6 +86,9 @@ body {
   40% {
     transform: translateY(50px);
   }
+  40.01% {
+    transform: translateY(-50px);
+  }
 }
 
 @keyframes lifting {
